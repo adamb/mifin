@@ -6,7 +6,8 @@ class SP50
 
   def initialize()
     @pfolio = Array.new
-    (1..50).each { |s| @pfolio << MiStock.new("SP#{s}")  }
+    # make the cost vary 1..50, the num shares is 100
+    (1..50).each { |s| @pfolio << MiStock.new("SP#{s}", s,100, Time.now.strftime("%m-%d"), s)  }
   end
   
 end
