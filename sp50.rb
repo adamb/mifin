@@ -15,4 +15,5 @@ begin
   
   s = SP50.new
   s.pfolio.each { |s| puts "#{s}" }
+
 end
